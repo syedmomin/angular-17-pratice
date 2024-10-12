@@ -6,8 +6,8 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [FormsModule],
   templateUrl: './data-binding.component.html',
-  styleUrl: './data-binding.component.scss'
 })
+
 export class DataBindingComponent {
   eventBindingText: string = '';
   modalBindingText: string = '';

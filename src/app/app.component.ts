@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { IfElseComponent } from './if-else/if-else.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { DirectiveComponent } from './directive/directive.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     RouterOutlet,
-    IfElseComponent,
+    DirectiveComponent,
     DataBindingComponent
   ],
   templateUrl: './app.component.html',
