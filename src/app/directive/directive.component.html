@@ -15,8 +15,8 @@
 <div>
     <h5>List of employees</h5>
     <ul>
-        @for(item of employees; track item.id){
-        <li>{{ item.name }} ({{ item.description }})</li>
+        @for(item of employees; track item.id; let i = $index; let count = $count){
+        <li>{{i + 1}} {{ item.name }} ({{ item.description }}) - total count({{ count }}) </li>
         }
         @empty{
             <p>No data found</p>

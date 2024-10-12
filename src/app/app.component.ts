@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectiveComponent } from './directive/directive.component';
+import { DecoratorComponent } from './decorator/decorator.component';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,8 @@ import { DirectiveComponent } from './directive/directive.component';
   imports: [
     RouterOutlet,
     DirectiveComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    DecoratorComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
