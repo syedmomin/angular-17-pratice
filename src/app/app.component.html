@@ -1,3 +1,15 @@
-<app-header></app-header>
+<!-- angular 18 if else condition  -->
+<!-- if your angular v14 -> v16 run this command to migrate condition  'ng generate @angular/core:control-flow' -->
+<div>
+    @if(condition){
+      <h1 style="color: rgb(0, 138, 2);">i'm if</h1>
+    }@else if(condition2){
+      <h1 style="color: rgb(255, 111, 0);"> i'm if else</h1>
+    }@else{
+      <h1 style="color: rgb(255, 0, 0);">i'm else</h1>
+    }
+</div>
 
-<app-file-upload></app-file-upload>
+<!-- event binding  -->
+ <input type="text" (input)="eventBinding($event)">
+ {{eventBindingText}}

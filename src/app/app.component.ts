@@ -10,4 +10,13 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {}
+export class AppComponent {
+  condition: boolean = true;
+  condition2: boolean = true;
+  eventBindingText: string = '';
+
+  eventBinding(event: Event) {
+    const inputField = event.target as HTMLInputElement;
+    this.eventBindingText = inputField.value;
+  }
+}
