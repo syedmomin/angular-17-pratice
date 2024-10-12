@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 })
 export class DecoratorComponent {
   @Input({ alias: 'nameAtr', required: true }) nameText: string = 'Momin';
+  @Input() routeText: string = '';
 }
