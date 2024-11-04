@@ -1,0 +1,16 @@
+<form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+  @for (field of mappingField; track field) {
+    <label>{{ field.label }}</label>
+    @for (control of field.control;track control) {
+      <input
+        [formControlName]="field.label"
+        [type]="field.type"
+        [value]="control.value"
+      />
+      @if (reactiveForm.get(field.label)?.invalid && (reactiveForm.get(field.label)?.touched || reactiveForm.get(field.label)?.dirty)) { 
+        <small>This field is required.</small> 
+      }
+    }
+  }
+  <button type="submit">Submit</button>
+</form>
